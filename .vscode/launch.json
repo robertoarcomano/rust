@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (cargo)",
+            "type": "lldb",
+            "request": "launch",
+            "cargo": {
+                "args": ["build", "--bin", "main"],
+                "filter": {
+                    "name": "main",
+                    "kind": "bin"
+                }
+            },
+            "program": "${workspaceFolder}/target/debug/main",
+            "cwd": "${workspaceFolder}",
+            "sourceLanguages": ["rust"]
+        }
+    ]
+}
